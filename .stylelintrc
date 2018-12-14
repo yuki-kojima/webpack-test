@@ -1,0 +1,33 @@
+{
+    "extends": [
+    "stylelint-config-standard"
+    ],
+    "rules": {
+        "indentation": "tab",
+        "declaration-no-important": true,
+        "selector-max-universal": 0,
+        "selector-max-id": 0,
+        "no-descending-specificity": null,
+        "no-duplicate-selectors": null,
+        "property-no-unknown": [ true,
+            {
+            "ignoreProperties": [
+                "box-pack",
+                "box-align",
+                "box-flex"
+                ]
+            }
+        ],
+        "at-rule-empty-line-before": "never",
+        "color-hex-length": null,
+        "color-hex-case": null,
+        "at-rule-no-unknown": [ true,
+            {
+                "ignoreAtRules": ["include", "extend", "each"]
+            }
+        ],
+        "rule-empty-line-before": null,
+        "selector-list-comma-newline-after": "never-multi-line",
+        "declaration-empty-line-before": "never"
+    }
+}
